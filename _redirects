@@ -1,0 +1,15 @@
+# Netlify redirects. First match wins.
+
+# Short game URL -> canonical game URL (permanent)
+/maize                 /a-maize-in-mazes/          301
+/maize/*               /a-maize-in-mazes/:splat    301
+/a-maize-in-mazes      /a-maize-in-mazes/          301
+
+# Handy short links (302 = temporary, so you can change them later)
+/press                 /a-maize-in-mazes/press/    302
+/steam                 https://store.steampowered.com/app/5151180/   302
+/wishlist              https://store.steampowered.com/app/5151180/   302
+/playtest              https://store.steampowered.com/app/5151180/   302
+
+# DISCORD: replace the Steam URL with your permanent discord.gg invite once the game category is revealed.
+/discord               https://store.steampowered.com/app/5151180/   302

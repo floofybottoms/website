@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://floofybottoms.com/sitemap.xml

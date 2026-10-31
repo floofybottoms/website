@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 130" role="img" aria-label="A stick of butter">
+  <g stroke="#1e3a23" stroke-width="5" stroke-linejoin="round">
+    <path d="M18 46 98 14 152 36 72 68Z" fill="#fff3a6"/>
+    <path d="M18 46 72 68 72 110 18 88Z" fill="#ffd84a"/>
+    <path d="M72 68 152 36 152 78 72 110Z" fill="#f4c430"/>
+    <path d="M104 55 152 36 152 78 104 97Z" fill="#fffdf5"/>
+    <path d="M104 55 98 52 146 33 152 36" fill="#fffdf5"/>
+  </g>
+  <path d="M106 70 150 52M106 80 150 62" stroke="#4cbfe6" stroke-width="5"/>
+  <path d="M40 40 70 28" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  <path d="M10 14l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#fff" stroke="#1e3a23" stroke-width="3"/>
+  <path d="M160 96l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#fff" stroke="#1e3a23" stroke-width="3"/>
+</svg>

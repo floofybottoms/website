@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" role="img" aria-label="Fluffy Pomeranian face (placeholder for the studio logo)">
+  <path d="M100 22c14-10 30-4 36 8 16-4 30 8 28 22 14 6 18 24 8 36 10 12 4 30-10 34 0 16-16 26-30 20-8 12-24 14-32 6-8 8-24 6-32-6-14 6-30-4-30-20-14-4-20-22-10-34-10-12-6-30 8-36-2-14 12-26 28-22 6-12 22-18 36-8z" fill="#f6c58f" stroke="#1e3a23" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M52 52 44 14 82 36ZM148 52l8-38-38 22Z" fill="#e9a867" stroke="#1e3a23" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M100 66c26 0 40 18 40 38s-18 34-40 34-40-14-40-34 14-38 40-38z" fill="#fff3e2"/>
+  <circle cx="80" cy="92" r="9" fill="#1e3a23"/><circle cx="120" cy="92" r="9" fill="#1e3a23"/>
+  <circle cx="83" cy="89" r="3" fill="#fff"/><circle cx="123" cy="89" r="3" fill="#fff"/>
+  <path d="M92 108h16l-8 9z" fill="#1e3a23" stroke="#1e3a23" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M100 117q-6 10-14 6M100 117q6 10 14 6" fill="none" stroke="#1e3a23" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="70" cy="112" rx="9" ry="5" fill="#ff8fa3" opacity=".6"/><ellipse cx="130" cy="112" rx="9" ry="5" fill="#ff8fa3" opacity=".6"/>
+</svg>
