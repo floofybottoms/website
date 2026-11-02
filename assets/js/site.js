@@ -14,7 +14,7 @@ const SITE = {
 
   // Trailer: paste the YouTube video ID (the part after "watch?v=") when it's ready.
   // Until then the page shows a looping clip (if loopVideo is set) or the fallback image.
-  youtubeId: "",
+  youtubeId: "LjXN6K205NM",
   loopVideo: "", // e.g. "/assets/img/gameplay-loop.mp4"
 };
 
