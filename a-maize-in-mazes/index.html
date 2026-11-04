@@ -17,6 +17,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preload" href="/assets/fonts/chewy.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/forms.css">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"VideoGame","name":"A Maize in Mazes","url":"https://floofybottoms.com/a-maize-in-mazes/","gamePlatform":"PC (Windows)","applicationCategory":"Game","genre":["Party","Racing","Multiplayer"],"numberOfPlayers":{"@type":"QuantitativeValue","minValue":1,"maxValue":20},"author":{"@type":"Organization","name":"Floofy Bottoms LLC","url":"https://floofybottoms.com/"},"publisher":{"@type":"Organization","name":"Floofy Bottoms LLC"},"datePublished":"2026-11-06","offers":{"@type":"Offer","price":"3.99","priceCurrency":"USD","url":"https://store.steampowered.com/app/5151180/"}}
   </script>
@@ -206,6 +207,140 @@
       </div>
     </section>
 
+    <!-- ================= BUGS & FEEDBACK ================= -->
+    <section class="band-butter" id="feedback" aria-labelledby="fb-h">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="fb-h">Help us make it butter</h2>
+          <p>Found something broken? Got an idea? Tell us. We read everything.</p>
+        </div>
+        <div class="form-cta">
+          <div class="card">
+            <h3>Found a bug? 🐛</h3>
+            <p>Fell through the floor? Stuck in a wall? Tell us what happened and we'll squash it.</p>
+            <button class="btn btn-small" type="button" data-open-form="bug">Report a bug</button>
+          </div>
+          <div class="card">
+            <h3>Likes, dislikes &amp; ideas 🌽</h3>
+            <p>What's fun, what's not, and what should we add next?</p>
+            <button class="btn btn-small btn-green" type="button" data-open-form="feedback">Share feedback</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bug report form -->
+      <dialog class="form-dialog" data-form="bug" aria-labelledby="bug-h">
+        <div class="form-inner">
+          <button class="form-close" type="button" data-close aria-label="Close">✕</button>
+          <span class="kicker">Bug report</span>
+          <h3 id="bug-h">Found a bug? 🐛</h3>
+          <p class="sub">Tell us what broke and we'll squash it.</p>
+          <form class="f">
+            <label for="bug-what">What happened?</label>
+            <textarea id="bug-what" name="what_happened" required placeholder="I fell through the floor near the butter..."></textarea>
+
+            <label for="bug-steps">Steps to make it happen again <span class="hint">(optional)</span></label>
+            <textarea id="bug-steps" name="steps" placeholder="1. Start a free-for-all round&#10;2. ..."></textarea>
+
+            <div class="row">
+              <div>
+                <label for="bug-mode">Game mode</label>
+                <select id="bug-mode" name="game_mode">
+                  <option>Free-for-all</option>
+                  <option>Teams</option>
+                  <option>Solo</option>
+                  <option>Lobby / menus</option>
+                  <option>Not sure</option>
+                </select>
+              </div>
+              <div>
+                <label for="bug-often">How often?</label>
+                <select id="bug-often" name="how_often">
+                  <option>Every time</option>
+                  <option>Sometimes</option>
+                  <option>Only once</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div>
+                <label for="bug-steam">Steam name <span class="hint">(optional)</span></label>
+                <input id="bug-steam" type="text" name="steam_name" autocomplete="nickname">
+              </div>
+              <div>
+                <label for="bug-email">Email <span class="hint">(optional, for follow-up)</span></label>
+                <input id="bug-email" type="email" name="email" autocomplete="email" placeholder="you@example.com">
+              </div>
+            </div>
+
+            <label for="bug-link">Screenshot or video link <span class="hint">(optional)</span></label>
+            <input id="bug-link" type="url" name="media_link" placeholder="Paste a link (Steam screenshot, Imgur, YouTube)">
+
+            <label class="hp">Leave this empty <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></label>
+
+            <div class="actions">
+              <button class="btn" type="submit" data-label="Send bug report">Send bug report</button>
+            </div>
+            <p class="form-status" role="status"></p>
+            <p class="form-note">Only "What happened?" is required. See our <a href="/privacy/">privacy policy</a>.</p>
+          </form>
+          <div class="form-thanks" hidden>
+            <h3>Thanks! 🐛🔨</h3>
+            <p>Your bug report is on its way. We'll get squashing.</p>
+            <button class="btn btn-small btn-white" type="button" data-close>Close</button>
+          </div>
+        </div>
+      </dialog>
+
+      <!-- Likes / dislikes / ideas form -->
+      <dialog class="form-dialog" data-form="feedback" aria-labelledby="idea-h">
+        <div class="form-inner">
+          <button class="form-close" type="button" data-close aria-label="Close">✕</button>
+          <span class="kicker" style="background:var(--leaf)">Feedback</span>
+          <h3 id="idea-h">Likes, dislikes &amp; ideas 🌽</h3>
+          <p class="sub">What's fun? What's not? What should we add?</p>
+          <form class="f">
+            <fieldset>
+              <legend>This is a&hellip;</legend>
+              <div class="chips">
+                <label><input type="radio" name="feedback_type" value="Like" checked><span>Like</span></label>
+                <label><input type="radio" name="feedback_type" value="Dislike"><span>Dislike</span></label>
+                <label><input type="radio" name="feedback_type" value="Idea"><span>Idea</span></label>
+              </div>
+            </fieldset>
+
+            <label for="idea-msg">Tell us more</label>
+            <textarea id="idea-msg" name="message" required style="min-height:160px" placeholder="More sabotage props! Maybe a popcorn bomb?"></textarea>
+
+            <div class="row">
+              <div>
+                <label for="idea-steam">Steam name <span class="hint">(optional)</span></label>
+                <input id="idea-steam" type="text" name="steam_name" autocomplete="nickname">
+              </div>
+              <div>
+                <label for="idea-email">Email <span class="hint">(optional)</span></label>
+                <input id="idea-email" type="email" name="email" autocomplete="email" placeholder="you@example.com">
+              </div>
+            </div>
+
+            <label class="hp">Leave this empty <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></label>
+
+            <div class="actions">
+              <button class="btn btn-green" type="submit" data-label="Send feedback">Send feedback</button>
+            </div>
+            <p class="form-status" role="status"></p>
+            <p class="form-note">See our <a href="/privacy/">privacy policy</a>.</p>
+          </form>
+          <div class="form-thanks" hidden>
+            <h3>Thanks! 🌽</h3>
+            <p>Got it. Every idea gets read, even the corny ones.</p>
+            <button class="btn btn-small btn-white" type="button" data-close>Close</button>
+          </div>
+        </div>
+      </dialog>
+    </section>
+
     <!-- ================= COMMUNITY ================= -->
     <section aria-labelledby="comm-h">
       <div class="wrap">
@@ -272,5 +407,6 @@
   </div>
 
   <script src="/assets/js/site.js"></script>
+  <script src="/assets/js/forms.js"></script>
 </body>
 </html>
