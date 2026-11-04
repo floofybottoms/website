@@ -1,0 +1,61 @@
+/* Bug report + feedback forms (A Maize in Mazes page) */
+
+.form-cta { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+@media (max-width: 760px) { .form-cta { grid-template-columns: 1fr; } }
+.form-cta .card h3 { margin-bottom: 0.2em; }
+
+dialog.form-dialog {
+  width: min(620px, calc(100vw - 24px));
+  max-height: calc(100vh - 24px);
+  padding: 0;
+  border: 3px solid var(--ink);
+  border-radius: 22px;
+  background: var(--white);
+  color: var(--ink);
+  box-shadow: 0 10px 0 var(--ink);
+  overflow: auto;
+}
+dialog.form-dialog::backdrop { background: rgba(20, 35, 22, 0.7); }
+.form-inner { padding: 26px 26px 24px; position: relative; }
+.form-inner h3 { font-size: 1.9rem; margin: 6px 0 0.15em; }
+.form-inner .sub { color: var(--ink-soft); font-weight: 600; margin: 0 0 6px; }
+.form-close {
+  position: absolute; top: 14px; right: 14px;
+  width: 40px; height: 40px; border-radius: 50%;
+  border: 3px solid var(--ink); background: var(--white);
+  font-family: "Chewy", sans-serif; font-size: 1.3rem; line-height: 1; cursor: pointer;
+}
+.form-close:hover { background: var(--butter); }
+
+.f label, .f legend { display: block; font-weight: 800; margin: 16px 0 6px; padding: 0; }
+.f fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+.f .hint { font-size: 0.85rem; color: var(--ink-soft); font-weight: 600; }
+.f input[type=text], .f input[type=email], .f input[type=url], .f select, .f textarea {
+  width: 100%; font: inherit; font-size: 1rem;
+  padding: 10px 12px; border: 2px solid var(--ink); border-radius: 12px; background: var(--cream); color: var(--ink);
+}
+.f textarea { min-height: 96px; resize: vertical; }
+.f input:focus, .f select:focus, .f textarea:focus { outline: 3px solid var(--tomato); outline-offset: 1px; }
+.f .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 560px) { .f .row { grid-template-columns: 1fr; } }
+
+/* Like / Dislike / Idea chips (radio buttons) */
+.chips { display: flex; gap: 8px; flex-wrap: wrap; }
+.chips label { margin: 0; }
+.chips input { position: absolute; opacity: 0; pointer-events: none; }
+.chips span {
+  display: inline-block; border: 2px solid var(--ink); border-radius: 999px;
+  padding: 4px 14px; font-weight: 800; background: var(--butter-pale); cursor: pointer;
+}
+.chips input:checked + span { background: var(--butter); box-shadow: 0 3px 0 var(--ink); }
+.chips input:focus-visible + span { outline: 3px solid var(--tomato); outline-offset: 2px; }
+
+.f .actions { margin-top: 22px; display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+.f button[disabled] { opacity: 0.6; cursor: wait; }
+.form-note { font-size: 0.85rem; color: var(--ink-soft); font-weight: 600; margin: 14px 0 0; }
+.form-status:empty { display: none; }
+.form-status { margin: 14px 0 0; font-weight: 800; }
+.form-status.error { color: #b3261e; }
+.form-thanks { text-align: center; padding: 20px 0 6px; }
+.form-thanks h3 { font-size: 2.2rem; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
