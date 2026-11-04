@@ -59,3 +59,7 @@ dialog.form-dialog::backdrop { background: rgba(20, 35, 22, 0.7); }
 .form-thanks { text-align: center; padding: 20px 0 6px; }
 .form-thanks h3 { font-size: 2.2rem; }
 .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+/* required "I agree" checkbox */
+.f label.agree { display: flex; gap: 10px; align-items: flex-start; font-weight: 700; font-size: 0.95rem; margin-top: 18px; cursor: pointer; }
+.f label.agree input { width: 20px; height: 20px; margin-top: 2px; flex: none; accent-color: var(--leaf); }
